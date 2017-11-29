@@ -6,7 +6,7 @@ APP_ID = 6277574
 
 
 def get_user_login():
-    return getpass.getpass(prompt='Username:\n\t')
+    return input('Username:\n\t')
 
 
 def get_user_password():
@@ -46,14 +46,12 @@ def mute_vk_logger():
 
 if __name__ == '__main__':
     mute_vk_logger()
-    authentification_success = False
-    while not authentification_success:
-        login = get_user_login()
-        password = get_user_password()
-        try:
-            friends_online = get_online_friends(login, password)
-        except vk.exceptions.VkAuthError:
-            print('Invalid login or password.\nTry again!\n')
-        else:
-            authentification_success = True
-            output_friends_to_console(friends_online)
+
+    login = get_user_login()
+    password = get_user_password()
+    try:
+        friends_online = get_online_friends(login, password)
+    except vk.exceptions.VkAuthError:
+        print('Invalid login or password.\n')
+    else:
+        output_friends_to_console(friends_online)

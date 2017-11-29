@@ -19,7 +19,7 @@ Remember, it is recommended to use [virtualenv/venv](https://devman.org/encyclop
 ```bash
 python vk_friends_online.py 
 Username: 
-    ******
+    user_name
 Password: 
     ******
 You have 2 friends online:
