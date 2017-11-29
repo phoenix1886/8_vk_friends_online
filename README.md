@@ -1,6 +1,7 @@
 # Watcher of Friends Online
 
-[TODO. There will be project description]
+This script lists all user's friends online in VK.com.
+
 
 # How to Install
 
@@ -11,6 +12,21 @@ pip install -r requirements.txt # alternatively try pip3
 ```
 
 Remember, it is recommended to use [virtualenv/venv](https://devman.org/encyclopedia/pip/pip_virtualenv/) for better isolation.
+
+
+## Example
+
+```bash
+python vk_friends_online.py 
+Username: 
+    ******
+Password: 
+    ******
+You have 2 friends online:
+1. Конифеев Игорь is online
+2. Игнашевич Сережа is online
+```
+
 
 # Project Goals
 
